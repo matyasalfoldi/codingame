@@ -14,9 +14,7 @@ struct Position
 struct Building
 {
     int height;
-    int originalHeight;
     int width;
-    int originalWidth;
 };
 
 class Batman
@@ -82,8 +80,6 @@ int main()
 {
     Building building;
     cin >> building.width >> building.height; cin.ignore();
-    building.originalHeight = building.height;
-    building.originalWidth = building.width;
     int N; // maximum number of turns before game over.
     cin >> N; cin.ignore();
     Position startPos;
